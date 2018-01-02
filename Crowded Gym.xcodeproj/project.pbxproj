@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D67039731FFB0A1600324A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039721FFB0A1600324A30 /* AppDelegate.swift */; };
+		D67039751FFB0A1600324A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039741FFB0A1600324A30 /* ViewController.swift */; };
+		D67039781FFB0A1600324A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67039761FFB0A1600324A30 /* Main.storyboard */; };
+		D670397A1FFB0A1600324A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67039791FFB0A1600324A30 /* Assets.xcassets */; };
+		D670397D1FFB0A1600324A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D670397B1FFB0A1600324A30 /* LaunchScreen.storyboard */; };
+		D67039881FFB0A1600324A30 /* Crowded_GymTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039871FFB0A1600324A30 /* Crowded_GymTests.swift */; };
+		D67039931FFB0A1600324A30 /* Crowded_GymUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039921FFB0A1600324A30 /* Crowded_GymUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D67039841FFB0A1600324A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D67039671FFB0A1600324A30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D670396E1FFB0A1600324A30;
+			remoteInfo = "Crowded Gym";
+		};
+		D670398F1FFB0A1600324A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D67039671FFB0A1600324A30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D670396E1FFB0A1600324A30;
+			remoteInfo = "Crowded Gym";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D670396F1FFB0A1600324A30 /* Crowded Gym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowded Gym.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67039721FFB0A1600324A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D67039741FFB0A1600324A30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D67039771FFB0A1600324A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D67039791FFB0A1600324A30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D670397C1FFB0A1600324A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D670397E1FFB0A1600324A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67039831FFB0A1600324A30 /* Crowded GymTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crowded GymTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67039871FFB0A1600324A30 /* Crowded_GymTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crowded_GymTests.swift; sourceTree = "<group>"; };
+		D67039891FFB0A1600324A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D670398E1FFB0A1600324A30 /* Crowded GymUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crowded GymUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67039921FFB0A1600324A30 /* Crowded_GymUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crowded_GymUITests.swift; sourceTree = "<group>"; };
+		D67039941FFB0A1600324A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D670396C1FFB0A1600324A30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67039801FFB0A1600324A30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D670398B1FFB0A1600324A30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D67039661FFB0A1600324A30 = {
+			isa = PBXGroup;
+			children = (
+				D67039711FFB0A1600324A30 /* Crowded Gym */,
+				D67039861FFB0A1600324A30 /* Crowded GymTests */,
+				D67039911FFB0A1600324A30 /* Crowded GymUITests */,
+				D67039701FFB0A1600324A30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D67039701FFB0A1600324A30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D670396F1FFB0A1600324A30 /* Crowded Gym.app */,
+				D67039831FFB0A1600324A30 /* Crowded GymTests.xctest */,
+				D670398E1FFB0A1600324A30 /* Crowded GymUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D67039711FFB0A1600324A30 /* Crowded Gym */ = {
+			isa = PBXGroup;
+			children = (
+				D67039721FFB0A1600324A30 /* AppDelegate.swift */,
+				D67039741FFB0A1600324A30 /* ViewController.swift */,
+				D67039761FFB0A1600324A30 /* Main.storyboard */,
+				D67039791FFB0A1600324A30 /* Assets.xcassets */,
+				D670397B1FFB0A1600324A30 /* LaunchScreen.storyboard */,
+				D670397E1FFB0A1600324A30 /* Info.plist */,
+			);
+			path = "Crowded Gym";
+			sourceTree = "<group>";
+		};
+		D67039861FFB0A1600324A30 /* Crowded GymTests */ = {
+			isa = PBXGroup;
+			children = (
+				D67039871FFB0A1600324A30 /* Crowded_GymTests.swift */,
+				D67039891FFB0A1600324A30 /* Info.plist */,
+			);
+			path = "Crowded GymTests";
+			sourceTree = "<group>";
+		};
+		D67039911FFB0A1600324A30 /* Crowded GymUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D67039921FFB0A1600324A30 /* Crowded_GymUITests.swift */,
+				D67039941FFB0A1600324A30 /* Info.plist */,
+			);
+			path = "Crowded GymUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D670396E1FFB0A1600324A30 /* Crowded Gym */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67039971FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded Gym" */;
+			buildPhases = (
+				D670396B1FFB0A1600324A30 /* Sources */,
+				D670396C1FFB0A1600324A30 /* Frameworks */,
+				D670396D1FFB0A1600324A30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crowded Gym";
+			productName = "Crowded Gym";
+			productReference = D670396F1FFB0A1600324A30 /* Crowded Gym.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D67039821FFB0A1600324A30 /* Crowded GymTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D670399A1FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded GymTests" */;
+			buildPhases = (
+				D670397F1FFB0A1600324A30 /* Sources */,
+				D67039801FFB0A1600324A30 /* Frameworks */,
+				D67039811FFB0A1600324A30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67039851FFB0A1600324A30 /* PBXTargetDependency */,
+			);
+			name = "Crowded GymTests";
+			productName = "Crowded GymTests";
+			productReference = D67039831FFB0A1600324A30 /* Crowded GymTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D670398D1FFB0A1600324A30 /* Crowded GymUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D670399D1FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded GymUITests" */;
+			buildPhases = (
+				D670398A1FFB0A1600324A30 /* Sources */,
+				D670398B1FFB0A1600324A30 /* Frameworks */,
+				D670398C1FFB0A1600324A30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67039901FFB0A1600324A30 /* PBXTargetDependency */,
+			);
+			name = "Crowded GymUITests";
+			productName = "Crowded GymUITests";
+			productReference = D670398E1FFB0A1600324A30 /* Crowded GymUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D67039671FFB0A1600324A30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Joel Whitney";
+				TargetAttributes = {
+					D670396E1FFB0A1600324A30 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D67039821FFB0A1600324A30 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D670396E1FFB0A1600324A30;
+					};
+					D670398D1FFB0A1600324A30 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D670396E1FFB0A1600324A30;
+					};
+				};
+			};
+			buildConfigurationList = D670396A1FFB0A1600324A30 /* Build configuration list for PBXProject "Crowded Gym" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D67039661FFB0A1600324A30;
+			productRefGroup = D67039701FFB0A1600324A30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D670396E1FFB0A1600324A30 /* Crowded Gym */,
+				D67039821FFB0A1600324A30 /* Crowded GymTests */,
+				D670398D1FFB0A1600324A30 /* Crowded GymUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D670396D1FFB0A1600324A30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D670397D1FFB0A1600324A30 /* LaunchScreen.storyboard in Resources */,
+				D670397A1FFB0A1600324A30 /* Assets.xcassets in Resources */,
+				D67039781FFB0A1600324A30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67039811FFB0A1600324A30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D670398C1FFB0A1600324A30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D670396B1FFB0A1600324A30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67039751FFB0A1600324A30 /* ViewController.swift in Sources */,
+				D67039731FFB0A1600324A30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D670397F1FFB0A1600324A30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67039881FFB0A1600324A30 /* Crowded_GymTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D670398A1FFB0A1600324A30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67039931FFB0A1600324A30 /* Crowded_GymUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D67039851FFB0A1600324A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D670396E1FFB0A1600324A30 /* Crowded Gym */;
+			targetProxy = D67039841FFB0A1600324A30 /* PBXContainerItemProxy */;
+		};
+		D67039901FFB0A1600324A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D670396E1FFB0A1600324A30 /* Crowded Gym */;
+			targetProxy = D670398F1FFB0A1600324A30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D67039761FFB0A1600324A30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67039771FFB0A1600324A30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D670397B1FFB0A1600324A30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D670397C1FFB0A1600324A30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D67039951FFB0A1600324A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D67039961FFB0A1600324A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D67039981FFB0A1600324A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SREPW8963;
+				INFOPLIST_FILE = "Crowded Gym/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoelWhitney.Crowded-Gym";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D67039991FFB0A1600324A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SREPW8963;
+				INFOPLIST_FILE = "Crowded Gym/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoelWhitney.Crowded-Gym";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D670399B1FFB0A1600324A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SREPW8963;
+				INFOPLIST_FILE = "Crowded GymTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoelWhitney.Crowded-GymTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crowded Gym.app/Crowded Gym";
+			};
+			name = Debug;
+		};
+		D670399C1FFB0A1600324A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SREPW8963;
+				INFOPLIST_FILE = "Crowded GymTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoelWhitney.Crowded-GymTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crowded Gym.app/Crowded Gym";
+			};
+			name = Release;
+		};
+		D670399E1FFB0A1600324A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SREPW8963;
+				INFOPLIST_FILE = "Crowded GymUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoelWhitney.Crowded-GymUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Crowded Gym";
+			};
+			name = Debug;
+		};
+		D670399F1FFB0A1600324A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SREPW8963;
+				INFOPLIST_FILE = "Crowded GymUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JoelWhitney.Crowded-GymUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Crowded Gym";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D670396A1FFB0A1600324A30 /* Build configuration list for PBXProject "Crowded Gym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67039951FFB0A1600324A30 /* Debug */,
+				D67039961FFB0A1600324A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67039971FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded Gym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67039981FFB0A1600324A30 /* Debug */,
+				D67039991FFB0A1600324A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D670399A1FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded GymTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D670399B1FFB0A1600324A30 /* Debug */,
+				D670399C1FFB0A1600324A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D670399D1FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded GymUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D670399E1FFB0A1600324A30 /* Debug */,
+				D670399F1FFB0A1600324A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D67039671FFB0A1600324A30 /* Project object */;
+}
