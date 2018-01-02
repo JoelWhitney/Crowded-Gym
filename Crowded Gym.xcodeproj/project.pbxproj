@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217110BD590BDE3082157032 /* Pods_Crowded_GymTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C444899B00420A0F1F218DE5 /* Pods_Crowded_GymTests.framework */; };
+		4CAE63F7DD3F0E5A3B838E1C /* Pods_Crowded_GymUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEF70C81FB31BDA74A1F0B3 /* Pods_Crowded_GymUITests.framework */; };
 		D67039731FFB0A1600324A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039721FFB0A1600324A30 /* AppDelegate.swift */; };
 		D67039751FFB0A1600324A30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039741FFB0A1600324A30 /* ViewController.swift */; };
 		D67039781FFB0A1600324A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67039761FFB0A1600324A30 /* Main.storyboard */; };
@@ -14,6 +16,9 @@
 		D670397D1FFB0A1600324A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D670397B1FFB0A1600324A30 /* LaunchScreen.storyboard */; };
 		D67039881FFB0A1600324A30 /* Crowded_GymTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039871FFB0A1600324A30 /* Crowded_GymTests.swift */; };
 		D67039931FFB0A1600324A30 /* Crowded_GymUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039921FFB0A1600324A30 /* Crowded_GymUITests.swift */; };
+		D67039A31FFB163700324A30 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D67039A21FFB163700324A30 /* awsconfiguration.json */; };
+		D67039AD1FFB166100324A30 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039AC1FFB166100324A30 /* DataModels.swift */; };
+		F33BC1F7B64D2A9B110B42CA /* Pods_Crowded_Gym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8DF48A67196D677567ACDE /* Pods_Crowded_Gym.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		858439D56C6344ADB561715C /* Pods-Crowded Gym.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowded Gym.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crowded Gym/Pods-Crowded Gym.debug.xcconfig"; sourceTree = "<group>"; };
+		AE230768BBCD2EE82629AE79 /* Pods-Crowded Gym.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowded Gym.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crowded Gym/Pods-Crowded Gym.release.xcconfig"; sourceTree = "<group>"; };
+		BA088B63789909B1B5A54FE8 /* Pods-Crowded GymTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowded GymTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crowded GymTests/Pods-Crowded GymTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD8DF48A67196D677567ACDE /* Pods_Crowded_Gym.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowded_Gym.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C320E7B27597FB94728B3F3E /* Pods-Crowded GymUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowded GymUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crowded GymUITests/Pods-Crowded GymUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C444899B00420A0F1F218DE5 /* Pods_Crowded_GymTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowded_GymTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81F88D5C536E15004BF78BB /* Pods-Crowded GymUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowded GymUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crowded GymUITests/Pods-Crowded GymUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D670396F1FFB0A1600324A30 /* Crowded Gym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowded Gym.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67039721FFB0A1600324A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D67039741FFB0A1600324A30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,10 @@
 		D670398E1FFB0A1600324A30 /* Crowded GymUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crowded GymUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67039921FFB0A1600324A30 /* Crowded_GymUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crowded_GymUITests.swift; sourceTree = "<group>"; };
 		D67039941FFB0A1600324A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67039A21FFB163700324A30 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		D67039AC1FFB166100324A30 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		F86ABB4E0855F782E28ED0D0 /* Pods-Crowded GymTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crowded GymTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crowded GymTests/Pods-Crowded GymTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFEF70C81FB31BDA74A1F0B3 /* Pods_Crowded_GymUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crowded_GymUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33BC1F7B64D2A9B110B42CA /* Pods_Crowded_Gym.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217110BD590BDE3082157032 /* Pods_Crowded_GymTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAE63F7DD3F0E5A3B838E1C /* Pods_Crowded_GymUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21508999731CE0B159E04EC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				858439D56C6344ADB561715C /* Pods-Crowded Gym.debug.xcconfig */,
+				AE230768BBCD2EE82629AE79 /* Pods-Crowded Gym.release.xcconfig */,
+				F86ABB4E0855F782E28ED0D0 /* Pods-Crowded GymTests.debug.xcconfig */,
+				BA088B63789909B1B5A54FE8 /* Pods-Crowded GymTests.release.xcconfig */,
+				C320E7B27597FB94728B3F3E /* Pods-Crowded GymUITests.debug.xcconfig */,
+				C81F88D5C536E15004BF78BB /* Pods-Crowded GymUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D67039661FFB0A1600324A30 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +113,8 @@
 				D67039861FFB0A1600324A30 /* Crowded GymTests */,
 				D67039911FFB0A1600324A30 /* Crowded GymUITests */,
 				D67039701FFB0A1600324A30 /* Products */,
+				21508999731CE0B159E04EC0 /* Pods */,
+				D948FD8C38FBDE206FAB0591 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +131,13 @@
 		D67039711FFB0A1600324A30 /* Crowded Gym */ = {
 			isa = PBXGroup;
 			children = (
+				D67039761FFB0A1600324A30 /* Main.storyboard */,
+				D670397B1FFB0A1600324A30 /* LaunchScreen.storyboard */,
+				D67039791FFB0A1600324A30 /* Assets.xcassets */,
 				D67039721FFB0A1600324A30 /* AppDelegate.swift */,
 				D67039741FFB0A1600324A30 /* ViewController.swift */,
-				D67039761FFB0A1600324A30 /* Main.storyboard */,
-				D67039791FFB0A1600324A30 /* Assets.xcassets */,
-				D670397B1FFB0A1600324A30 /* LaunchScreen.storyboard */,
-				D670397E1FFB0A1600324A30 /* Info.plist */,
+				D67039A01FFB15FF00324A30 /* Data Models */,
+				D67039A11FFB160B00324A30 /* Utility */,
 			);
 			path = "Crowded Gym";
 			sourceTree = "<group>";
@@ -125,6 +160,33 @@
 			path = "Crowded GymUITests";
 			sourceTree = "<group>";
 		};
+		D67039A01FFB15FF00324A30 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				D67039AC1FFB166100324A30 /* DataModels.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		D67039A11FFB160B00324A30 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D67039A21FFB163700324A30 /* awsconfiguration.json */,
+				D670397E1FFB0A1600324A30 /* Info.plist */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D948FD8C38FBDE206FAB0591 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD8DF48A67196D677567ACDE /* Pods_Crowded_Gym.framework */,
+				C444899B00420A0F1F218DE5 /* Pods_Crowded_GymTests.framework */,
+				FFEF70C81FB31BDA74A1F0B3 /* Pods_Crowded_GymUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D67039971FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded Gym" */;
 			buildPhases = (
+				A2FBDF6AB3AFAFD3F557C31A /* [CP] Check Pods Manifest.lock */,
 				D670396B1FFB0A1600324A30 /* Sources */,
 				D670396C1FFB0A1600324A30 /* Frameworks */,
 				D670396D1FFB0A1600324A30 /* Resources */,
+				DB5FC59C23DD1D0474480770 /* [CP] Embed Pods Frameworks */,
+				E677CBC52D82A8D592808703 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D670399A1FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded GymTests" */;
 			buildPhases = (
+				EDA47677911864074BC28F34 /* [CP] Check Pods Manifest.lock */,
 				D670397F1FFB0A1600324A30 /* Sources */,
 				D67039801FFB0A1600324A30 /* Frameworks */,
 				D67039811FFB0A1600324A30 /* Resources */,
+				12772D60C1B227C6D067301D /* [CP] Embed Pods Frameworks */,
+				C7BB35548F9A668292FE280D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D670399D1FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded GymUITests" */;
 			buildPhases = (
+				136C74C4AA2FDE764ED645BA /* [CP] Check Pods Manifest.lock */,
 				D670398A1FFB0A1600324A30 /* Sources */,
 				D670398B1FFB0A1600324A30 /* Frameworks */,
 				D670398C1FFB0A1600324A30 /* Resources */,
+				F69BDF7B56EE01582D3A3358 /* [CP] Embed Pods Frameworks */,
+				E4FEFF8EF81A71601B29D3AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67039A31FFB163700324A30 /* awsconfiguration.json in Resources */,
 				D670397D1FFB0A1600324A30 /* LaunchScreen.storyboard in Resources */,
 				D670397A1FFB0A1600324A30 /* Assets.xcassets in Resources */,
 				D67039781FFB0A1600324A30 /* Main.storyboard in Resources */,
@@ -254,12 +326,190 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12772D60C1B227C6D067301D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded GymTests/Pods-Crowded GymTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		136C74C4AA2FDE764ED645BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crowded GymUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2FBDF6AB3AFAFD3F557C31A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crowded Gym-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BB35548F9A668292FE280D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded GymTests/Pods-Crowded GymTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB5FC59C23DD1D0474480770 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crowded Gym/Pods-Crowded Gym-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSFacebookSignIn/AWSFacebookSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSGoogleSignIn/AWSGoogleSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSFacebookSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSGoogleSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded Gym/Pods-Crowded Gym-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FEFF8EF81A71601B29D3AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded GymUITests/Pods-Crowded GymUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E677CBC52D82A8D592808703 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crowded Gym/Pods-Crowded Gym-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded Gym/Pods-Crowded Gym-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA47677911864074BC28F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crowded GymTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F69BDF7B56EE01582D3A3358 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded GymUITests/Pods-Crowded GymUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D670396B1FFB0A1600324A30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D67039751FFB0A1600324A30 /* ViewController.swift in Sources */,
+				D67039AD1FFB166100324A30 /* DataModels.swift in Sources */,
 				D67039731FFB0A1600324A30 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,14 +674,17 @@
 		};
 		D67039981FFB0A1600324A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858439D56C6344ADB561715C /* Pods-Crowded Gym.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SREPW8963;
-				INFOPLIST_FILE = "Crowded Gym/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Crowded Gym/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JoelWhitney.Crowded-Gym";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,14 +692,17 @@
 		};
 		D67039991FFB0A1600324A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE230768BBCD2EE82629AE79 /* Pods-Crowded Gym.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SREPW8963;
-				INFOPLIST_FILE = "Crowded Gym/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Crowded Gym/Utility/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JoelWhitney.Crowded-Gym";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +710,7 @@
 		};
 		D670399B1FFB0A1600324A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F86ABB4E0855F782E28ED0D0 /* Pods-Crowded GymTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +728,7 @@
 		};
 		D670399C1FFB0A1600324A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA088B63789909B1B5A54FE8 /* Pods-Crowded GymTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +746,7 @@
 		};
 		D670399E1FFB0A1600324A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C320E7B27597FB94728B3F3E /* Pods-Crowded GymUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +763,7 @@
 		};
 		D670399F1FFB0A1600324A30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C81F88D5C536E15004BF78BB /* Pods-Crowded GymUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
