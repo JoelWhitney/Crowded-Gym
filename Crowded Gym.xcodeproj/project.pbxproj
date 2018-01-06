@@ -17,8 +17,8 @@
 		D6513EE520013BF300401485 /* WorkoutRoutines.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EE420013BF300401485 /* WorkoutRoutines.swift */; };
 		D6513EEB20013CAD00401485 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EEA20013CAC00401485 /* Equipment.swift */; };
 		D6513EED20013CB100401485 /* UserProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EEC20013CB000401485 /* UserProfiles.swift */; };
-		D6513EF120014A2800401485 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EF020014A2800401485 /* SettingsViewController.swift */; };
 		D6513EF320014A4300401485 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EF220014A4300401485 /* WorkoutsViewController.swift */; };
+		D6513EF5200167B700401485 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EF4200167B700401485 /* ProfileViewController.swift */; };
 		D67039731FFB0A1600324A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039721FFB0A1600324A30 /* AppDelegate.swift */; };
 		D67039781FFB0A1600324A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67039761FFB0A1600324A30 /* Main.storyboard */; };
 		D670397A1FFB0A1600324A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67039791FFB0A1600324A30 /* Assets.xcassets */; };
@@ -61,8 +61,8 @@
 		D6513EE420013BF300401485 /* WorkoutRoutines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutines.swift; sourceTree = "<group>"; };
 		D6513EEA20013CAC00401485 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		D6513EEC20013CB000401485 /* UserProfiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfiles.swift; sourceTree = "<group>"; };
-		D6513EF020014A2800401485 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D6513EF220014A4300401485 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		D6513EF4200167B700401485 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D670396F1FFB0A1600324A30 /* Crowded Gym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowded Gym.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67039721FFB0A1600324A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D67039771FFB0A1600324A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 				D670397B1FFB0A1600324A30 /* LaunchScreen.storyboard */,
 				D67039791FFB0A1600324A30 /* Assets.xcassets */,
 				D67039721FFB0A1600324A30 /* AppDelegate.swift */,
-				D6513EF020014A2800401485 /* SettingsViewController.swift */,
+				D6513EF4200167B700401485 /* ProfileViewController.swift */,
 				D6513EF220014A4300401485 /* WorkoutsViewController.swift */,
 				D64898301FFDA64B00BA2E4A /* APIs */,
 				D67039A01FFB15FF00324A30 /* Data Models */,
@@ -541,10 +541,10 @@
 			files = (
 				D64898321FFDA6DE00BA2E4A /* DynamoDBAPI.swift in Sources */,
 				D6513EEB20013CAD00401485 /* Equipment.swift in Sources */,
-				D6513EF120014A2800401485 /* SettingsViewController.swift in Sources */,
 				D6513EED20013CB100401485 /* UserProfiles.swift in Sources */,
 				D6513EF320014A4300401485 /* WorkoutsViewController.swift in Sources */,
 				D67039731FFB0A1600324A30 /* AppDelegate.swift in Sources */,
+				D6513EF5200167B700401485 /* ProfileViewController.swift in Sources */,
 				D6513EDD20013AAE00401485 /* ExercisesCompleted.swift in Sources */,
 				D6513EE520013BF300401485 /* WorkoutRoutines.swift in Sources */,
 				D6513EDE20013AAE00401485 /* WorkoutComments.swift in Sources */,

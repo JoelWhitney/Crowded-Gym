@@ -49,7 +49,7 @@ class WorkoutsViewController: UIViewController {
     
     // MARK: - Methods
     func getUserProfile() {
-        if AWSSignInManager.sharedInstance().isLoggedIn, let userId = userIdentify {
+        if userProfile == nil, AWSSignInManager.sharedInstance().isLoggedIn, let userId = userIdentify {
             DynamodbAPI.sharedInstance.getUserProfile(userIdentity: userId) { (response, error) in
                 if let erro = error {
                     print("error: \(erro)")
@@ -69,10 +69,6 @@ class WorkoutsViewController: UIViewController {
             let newProfile: UserProfiles = UserProfiles()
             newProfile._userId = userId
             newProfile._joinedDate = Date().timeIntervalSince1970 as NSNumber
-//            newProfile._avgWorkoutRatings = 0
-//            newProfile._description = ""
-//            newProfile._equipment = []
-//            newProfile._pictureUrl = ""
             
             DynamodbAPI.sharedInstance.updateUserProfile(userProfile: newProfile, completioHandler: {
                 print("Created Profile Complete")
@@ -96,7 +92,8 @@ class WorkoutsViewController: UIViewController {
     
     // MARK: - Overrides
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destVC = (segue.destination as? SettingsViewController), let userProfile = userProfile {
+        if let destVC = (segue.destination as? ProfileViewController), let userProfile = userProfile {
+            print("head to profile vc")
             destVC.userProfile = userProfile
         }
     }

@@ -66,7 +66,7 @@
         <!--Settings-->
         <scene sceneID="v88-Nk-8W9">
             <objects>
-                <tableViewController title="Settings" id="l1d-EQ-rOr" customClass="SettingsViewController" customModule="Beerventory" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Settings" id="l1d-EQ-rOr" customClass="ProfileViewController" customModule="Crowded_Gym" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UX6-1C-vht">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
                                         <navigationItem title="User Profile" id="vo3-qK-JhC">
                                             <barButtonItem key="rightBarButtonItem" title="Done" id="5ei-XY-b9f">
                                                 <connections>
-                                                    <action selector="dismiss" destination="l1d-EQ-rOr" id="uHg-Dz-frL"/>
+                                                    <action selector="dismiss:" destination="l1d-EQ-rOr" id="HZO-hp-xql"/>
                                                 </connections>
                                             </barButtonItem>
                                         </navigationItem>

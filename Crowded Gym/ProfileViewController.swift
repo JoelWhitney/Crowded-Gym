@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  ProfileViewController.swift
 //  Crowded Gym
 //
 //  Created by Joel Whitney on 1/6/18.
@@ -13,8 +13,8 @@ import AWSMobileClient
 import AWSCore
 import QuartzCore
 
-class SettingsViewController: UITableViewController {
-   
+class ProfileViewController: UITableViewController {
+    
     // MARK: - Variables
     let version: String? = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String?
     let build: String? = Bundle.main.infoDictionary!["CFBundleVersion"] as! String?
@@ -27,7 +27,11 @@ class SettingsViewController: UITableViewController {
     var userProfile: UserProfiles?
     
     // MARK: - IBActions
-    @IBAction func dismiss() {
+    @IBAction func dismiss(_ sender: UIBarButtonItem) {
+        if let presentingVC = presentingViewController?.childViewControllers.first as? WorkoutsViewController, let userProfile = userProfile {
+            print("back to workouts vc")
+            presentingVC.userProfile = userProfile
+        }
         dismiss(animated: true, completion: nil)
     }
     
@@ -44,10 +48,10 @@ class SettingsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureProfileView()
-        signOutButton.addTarget(self, action: #selector(SettingsViewController.handleLogout), for: .touchUpInside)
+        signOutButton.addTarget(self, action: #selector(ProfileViewController.handleLogout), for: .touchUpInside)
         tableView.tableFooterView = UIView()
     }
-
+    
     // MARK: - Methods
     func configureProfileView() {
         versionLabel.text = version
@@ -93,9 +97,9 @@ class SettingsViewController: UITableViewController {
             }
         })
     }
-    
 }
 
+// MARK: - UIImage extension
 extension UIImage {
     var isPortrait:  Bool    { return size.height > size.width }
     var isLandscape: Bool    { return size.width > size.height }
