@@ -45,8 +45,8 @@ class AddWorkoutViewController: UITableViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     // MARK: - Methods
+
 }

@@ -20,6 +20,7 @@
 		D6513EF320014A4300401485 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EF220014A4300401485 /* WorkoutsViewController.swift */; };
 		D6513EF5200167B700401485 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EF4200167B700401485 /* ProfileViewController.swift */; };
 		D6513EF72001C9F800401485 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EF62001C9F800401485 /* AddWorkoutViewController.swift */; };
+		D6513EF920027E4100401485 /* WorkoutTimerToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513EF820027E4100401485 /* WorkoutTimerToolbar.swift */; };
 		D67039731FFB0A1600324A30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039721FFB0A1600324A30 /* AppDelegate.swift */; };
 		D67039781FFB0A1600324A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67039761FFB0A1600324A30 /* Main.storyboard */; };
 		D670397A1FFB0A1600324A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67039791FFB0A1600324A30 /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		D6513EF220014A4300401485 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
 		D6513EF4200167B700401485 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D6513EF62001C9F800401485 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
+		D6513EF820027E4100401485 /* WorkoutTimerToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTimerToolbar.swift; sourceTree = "<group>"; };
 		D670396F1FFB0A1600324A30 /* Crowded Gym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowded Gym.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67039721FFB0A1600324A30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D67039771FFB0A1600324A30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				D67039721FFB0A1600324A30 /* AppDelegate.swift */,
 				D6513EF4200167B700401485 /* ProfileViewController.swift */,
 				D6513EF220014A4300401485 /* WorkoutsViewController.swift */,
+				D6513EF820027E4100401485 /* WorkoutTimerToolbar.swift */,
 				D6513EF62001C9F800401485 /* AddWorkoutViewController.swift */,
 				D64898301FFDA64B00BA2E4A /* APIs */,
 				D67039A01FFB15FF00324A30 /* Data Models */,
@@ -553,6 +556,7 @@
 				D6513EE520013BF300401485 /* WorkoutRoutines.swift in Sources */,
 				D6513EDE20013AAE00401485 /* WorkoutComments.swift in Sources */,
 				D6513EE020013AAE00401485 /* Workouts.swift in Sources */,
+				D6513EF920027E4100401485 /* WorkoutTimerToolbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

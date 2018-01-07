@@ -35,12 +35,17 @@ class WorkoutsViewController: UIViewController {
             }
         }
     }
+    var timer = Timer() //make a timer variable, but do do anything yet
+    let timeBigInterval: TimeInterval = 30.0
+    let timeSmallIntervl: TimeInterval = 15.0
+    var timeCount: TimeInterval = 0.0
     
     // MARK: - IBActions
     
     // MARK: - IBOutlets
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet weak var workoutTimerToolbar: UIToolbar!
     
     // MARK: - View lifecycle
     override func viewDidLoad() {
@@ -48,6 +53,7 @@ class WorkoutsViewController: UIViewController {
         if !AWSSignInManager.sharedInstance().isLoggedIn {
             presentAuthUIViewController()
         }
+        updateToolbar()
         getUserProfile()
         
     }
@@ -63,6 +69,61 @@ class WorkoutsViewController: UIViewController {
     }
     
     // MARK: - Methods
+    func updateToolbar() {
+        var toolbarItems = [UIBarButtonItem]()
+        // left
+        toolbarItems.append(UIBarButtonItem(image: #imageLiteral(resourceName: "Up"), style: .plain, target: nil, action: nil))
+        toolbarItems.append(UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil))
+        // center
+        let workoutTimerView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 60))
+        
+        let timerLabel = UILabel(frame: CGRect(x: 0, y: 5, width: 200, height: 20))
+        timerLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        let hours = Int(timeCount) / 3600
+        let minutes = Int(timeCount) / 60 % 60
+        let seconds = Int(timeCount) % 60
+        let timeCountString = String(format:"%02i:%02i", minutes, seconds)
+        timerLabel.text = timeCountString
+        timerLabel.textAlignment = NSTextAlignment.center
+        workoutTimerView.addSubview(timerLabel)
+        
+        let workoutLabel = UILabel(frame: CGRect(x: 0, y: 30, width: 200, height: 15))
+        workoutLabel.font = UIFont.systemFont(ofSize: 14.0)
+        workoutLabel.text = "No workout selected"
+        workoutLabel.textAlignment = NSTextAlignment.center
+        workoutTimerView.addSubview(workoutLabel)
+        
+        toolbarItems.append(UIBarButtonItem(customView: workoutTimerView))
+        // right
+        toolbarItems.append(UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil))
+        if !timer.isValid {
+            toolbarItems.append(UIBarButtonItem(image: #imageLiteral(resourceName: "Play"), style: .plain, target: self, action: #selector(startTimer(sender:))))
+        } else {
+            toolbarItems.append(UIBarButtonItem(image: #imageLiteral(resourceName: "Pause"), style: .plain, target: self, action: #selector(pauseTimer(sender:))))
+        }
+        // g'ver
+        workoutTimerToolbar.items = toolbarItems
+    }
+    
+    @objc func startTimer(sender: UIButton) {
+        if !timer.isValid{ //prevent more than one timer on the thread
+            print("Timer Started")
+            print(timeCount)
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimeCount), userInfo: nil, repeats: true)
+        }
+    }
+    @objc func pauseTimer(sender: UIButton) {
+        print("Timer Stopped")
+        timer.invalidate()
+        updateToolbar()
+    }
+    
+    @objc func updateTimeCount() {
+        timeCount += 1
+        print(timeCount)
+        updateToolbar()
+    }
+    
     func getUserProfile() {
         if userProfile == nil, AWSSignInManager.sharedInstance().isLoggedIn, let userId = userIdentify {
             DynamodbAPI.sharedInstance.getUserProfile(userIdentity: userId) { (response, error) in
