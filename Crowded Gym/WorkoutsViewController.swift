@@ -22,10 +22,25 @@ class WorkoutsViewController: UIViewController {
         return nil
     }
     var userProfile: UserProfiles?
+    var selectedWorkout: Workouts?
+    var workouts = [Workouts]() {
+        didSet {
+            applyFilter()
+        }
+    }
+    var filteredWorkouts = [Workouts]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     // MARK: - IBActions
     
     // MARK: - IBOutlets
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var searchBar: UISearchBar!
     
     // MARK: - View lifecycle
     override func viewDidLoad() {
@@ -90,6 +105,15 @@ class WorkoutsViewController: UIViewController {
         })
     }
     
+    func applyFilter() {
+        guard let searchText = searchBar.text?.lowercased(), !searchText.isEmpty, !workouts.isEmpty else {
+            filteredWorkouts = workouts.sorted(by: { $0._displayName! < $1._displayName! })
+            return
+        }
+        filteredWorkouts = workouts.filter { $0._displayName!.lowercased().contains(searchText)}
+            .sorted(by: { $0._displayName! < $1._displayName! })
+    }
+    
     // MARK: - Overrides
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destVC = (segue.destination as? ProfileViewController), let userProfile = userProfile {
@@ -100,3 +124,49 @@ class WorkoutsViewController: UIViewController {
     
 }
 
+// MARK: - tableView data source
+extension WorkoutsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return filteredWorkouts.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let workoutTableCell = self.tableView!.dequeueReusableCell(withIdentifier: "WorkoutTableCell", for: indexPath) as! WorkoutTableCell
+        let workout = filteredWorkouts[indexPath.row]
+        // cell details
+        return workoutTableCell
+    }
+}
+
+// MARK: - tableView delegate
+extension WorkoutsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedWorkout = filteredWorkouts[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.performSegue(withIdentifier: "DetailsViewController", sender: self)
+    }
+}
+
+// MARK: - Search bar delegate
+extension WorkoutsViewController: UISearchBarDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        searchBar.endEditing(true)
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        applyFilter()
+        //tableView.setContentOffset(CGPoint.zero, animated: true)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+}
+
+// MARK: - BeerventoryTableCell
+class WorkoutTableCell: UITableViewCell {
+    //
+}
