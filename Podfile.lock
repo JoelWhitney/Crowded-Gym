@@ -1,20 +1,20 @@
 PODS:
-  - AWSAuthCore (2.6.10):
-    - AWSCore (= 2.6.10)
-  - AWSAuthUI (2.6.10):
-    - AWSAuthCore (= 2.6.10)
-    - AWSCore (= 2.6.10)
-  - AWSCore (2.6.10)
-  - AWSDynamoDB (2.6.10):
-    - AWSCore (= 2.6.10)
-  - AWSFacebookSignIn (2.6.10):
-    - AWSAuthCore (= 2.6.10)
+  - AWSAuthCore (2.6.6):
+    - AWSCore (= 2.6.6)
+  - AWSAuthUI (2.6.6):
+    - AWSAuthCore (= 2.6.6)
+    - AWSCore (= 2.6.6)
+  - AWSCore (2.6.6)
+  - AWSDynamoDB (2.6.6):
+    - AWSCore (= 2.6.6)
+  - AWSFacebookSignIn (2.6.6):
+    - AWSAuthCore (= 2.6.6)
     - FBSDKCoreKit (~> 4.0)
     - FBSDKLoginKit (~> 4.0)
-  - AWSGoogleSignIn (2.6.10):
-    - AWSAuthCore (= 2.6.10)
-  - AWSMobileClient (2.6.10):
-    - AWSAuthCore (= 2.6.10)
+  - AWSGoogleSignIn (2.6.6):
+    - AWSAuthCore (= 2.6.6)
+  - AWSMobileClient (2.6.6):
+    - AWSAuthCore (= 2.6.6)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -25,27 +25,21 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.29.0):
     - FBSDKCoreKit
-  - GoogleSignIn (4.1.1):
-    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
-    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
-    - GTMOAuth2 (~> 1.0)
-    - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/DebugUtils (2.1.3):
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/Defines (2.1.3)
-  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3):
-    - GoogleToolboxForMac/DebugUtils (= 2.1.3)
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
-  - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
-  - GTMOAuth2 (1.1.6):
-    - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.1.12):
-    - GTMSessionFetcher/Full (= 1.1.12)
-  - GTMSessionFetcher/Core (1.1.12)
-  - GTMSessionFetcher/Full (1.1.12):
-    - GTMSessionFetcher/Core (= 1.1.12)
-  - SwiftyJSON (4.0.0)
+  - GoogleAppUtilities (1.1.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleAuthUtilities (2.0.2):
+    - GoogleNetworkingUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleNetworkingUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleSignIn (4.0.0):
+    - GoogleAppUtilities (~> 1.1)
+    - GoogleAuthUtilities (~> 2.0)
+    - GoogleNetworkingUtilities (~> 1.2)
+    - GoogleUtilities (~> 1.3)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleUtilities (1.3.2):
+    - GoogleSymbolUtilities (~> 1.1)
 
 DEPENDENCIES:
   - AWSAuthUI (~> 2.6.6)
@@ -54,25 +48,25 @@ DEPENDENCIES:
   - AWSGoogleSignIn (~> 2.6.6)
   - AWSMobileClient (~> 2.6.6)
   - GoogleSignIn (~> 4.0)
-  - SwiftyJSON (~> 4.0)
 
 SPEC CHECKSUMS:
-  AWSAuthCore: d5e52ee671c815bee92c8fc1077fb6bd526f026a
-  AWSAuthUI: 7635d801f4162f812fa00f7711917371d3392269
-  AWSCore: 5bb072a6b5b185f43ddbd239d6554d2f8a285ad2
-  AWSDynamoDB: 46c7d83862a8375fb824796dc60b04f9273c5d3f
-  AWSFacebookSignIn: 9e190809bbf046e2241d0a61345c0ddc7c4c424c
-  AWSGoogleSignIn: 203ed890aeea330b45947921bc348a81d22f6cf5
-  AWSMobileClient: 6bdf1228aa064a9f2ee9db1486f09bfc6bc64c1e
+  AWSAuthCore: 3d6f2d3a62efaa8a02fa4323ff4b297b56be0312
+  AWSAuthUI: a90df858b93c2b5fae0f4f2877e3416a5a9d4bd8
+  AWSCore: 64619e45b47678afab53ca0f9b4fa380ebee6f0b
+  AWSDynamoDB: 02a1de576c49d3dc20c6ca6f11e692150e4a726a
+  AWSFacebookSignIn: 194841fb5e47d5c285bebd799f55fe07061f3b70
+  AWSGoogleSignIn: 21736fa19175d9277ddfd3fecc25bad634d7f530
+  AWSMobileClient: 7bc1e855a3da55de5545f9dc3efb9d91f04a1cef
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FBSDKCoreKit: 6f139173dc63a1deaff4430a55f2fe5bb222d2af
   FBSDKLoginKit: 56a057ca6822535ea0faa25f57a7c41edb697fd4
-  GoogleSignIn: 3fdaa34a2ba04dbd7a25d7db39aecb0da98d5bdc
-  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
-  GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  GoogleAppUtilities: a8a552aa74f6597f805e45b5a3962766c3134973
+  GoogleAuthUtilities: ccad2e0a9284699973ff57c0dd24c3893657fda4
+  GoogleNetworkingUtilities: 3edd3a8161347494f2da60ea0deddc8a472d94cb
+  GoogleSignIn: 09036ed61f8e75f1424100d63f7719480b2428c3
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
 
-PODFILE CHECKSUM: ef4f87eda98e3776bef6dcd0dd0ee1a0fcfd1f44
+PODFILE CHECKSUM: beb0433c7355f6bf2072b6c53a49762d1da58944
 
 COCOAPODS: 1.3.1

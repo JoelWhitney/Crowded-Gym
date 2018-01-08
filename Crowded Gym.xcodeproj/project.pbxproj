@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		217110BD590BDE3082157032 /* Pods_Crowded_GymTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C444899B00420A0F1F218DE5 /* Pods_Crowded_GymTests.framework */; };
 		4CAE63F7DD3F0E5A3B838E1C /* Pods_Crowded_GymUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEF70C81FB31BDA74A1F0B3 /* Pods_Crowded_GymUITests.framework */; };
+		A062A8A2627632D9BB72FE66 /* Pods_Crowded_Gym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8DF48A67196D677567ACDE /* Pods_Crowded_Gym.framework */; };
 		D64898321FFDA6DE00BA2E4A /* DynamoDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64898311FFDA6DE00BA2E4A /* DynamoDBAPI.swift */; };
 		D6513ED720013A9C00401485 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D6513ED620013A9C00401485 /* awsconfiguration.json */; };
 		D6513EDD20013AAE00401485 /* ExercisesCompleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6513ED820013AAE00401485 /* ExercisesCompleted.swift */; };
@@ -27,7 +28,6 @@
 		D670397D1FFB0A1600324A30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D670397B1FFB0A1600324A30 /* LaunchScreen.storyboard */; };
 		D67039881FFB0A1600324A30 /* Crowded_GymTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039871FFB0A1600324A30 /* Crowded_GymTests.swift */; };
 		D67039931FFB0A1600324A30 /* Crowded_GymUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67039921FFB0A1600324A30 /* Crowded_GymUITests.swift */; };
-		F33BC1F7B64D2A9B110B42CA /* Pods_Crowded_Gym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8DF48A67196D677567ACDE /* Pods_Crowded_Gym.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33BC1F7B64D2A9B110B42CA /* Pods_Crowded_Gym.framework in Frameworks */,
+				A062A8A2627632D9BB72FE66 /* Pods_Crowded_Gym.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,12 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D67039971FFB0A1600324A30 /* Build configuration list for PBXNativeTarget "Crowded Gym" */;
 			buildPhases = (
-				A2FBDF6AB3AFAFD3F557C31A /* [CP] Check Pods Manifest.lock */,
+				1CA8DEA5FE47F1F631CBB54F /* [CP] Check Pods Manifest.lock */,
 				D670396B1FFB0A1600324A30 /* Sources */,
 				D670396C1FFB0A1600324A30 /* Frameworks */,
 				D670396D1FFB0A1600324A30 /* Resources */,
-				DB5FC59C23DD1D0474480770 /* [CP] Embed Pods Frameworks */,
-				E677CBC52D82A8D592808703 /* [CP] Copy Pods Resources */,
+				69C8B42E77FFB25363EE4001 /* [CP] Embed Pods Frameworks */,
+				EA3A4EBAF7280032493B696B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,7 +395,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A2FBDF6AB3AFAFD3F557C31A /* [CP] Check Pods Manifest.lock */ = {
+		1CA8DEA5FE47F1F631CBB54F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,22 +413,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C7BB35548F9A668292FE280D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded GymTests/Pods-Crowded GymTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB5FC59C23DD1D0474480770 /* [CP] Embed Pods Frameworks */ = {
+		69C8B42E77FFB25363EE4001 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -445,10 +430,6 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -462,14 +443,25 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded Gym/Pods-Crowded Gym-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BB35548F9A668292FE280D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded GymTests/Pods-Crowded GymTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E4FEFF8EF81A71601B29D3AF /* [CP] Copy Pods Resources */ = {
@@ -487,13 +479,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crowded GymUITests/Pods-Crowded GymUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E677CBC52D82A8D592808703 /* [CP] Copy Pods Resources */ = {
+		EA3A4EBAF7280032493B696B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Crowded Gym/Pods-Crowded Gym-resources.sh",
+				"${PODS_ROOT}/GoogleAuthUtilities/Frameworks/frameworks/GoogleAuthUtilities.framework/Resources/GTMOAuth2ViewTouch.xib",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -722,7 +715,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 858439D56C6344ADB561715C /* Pods-Crowded Gym.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SREPW8963;
@@ -740,7 +733,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE230768BBCD2EE82629AE79 /* Pods-Crowded Gym.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SREPW8963;

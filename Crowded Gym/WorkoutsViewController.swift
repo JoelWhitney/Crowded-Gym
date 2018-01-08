@@ -49,27 +49,29 @@ class WorkoutsViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if !AWSSignInManager.sharedInstance().isLoggedIn {
-//            print("presenting authui vc")
-//            //presentAuthUIViewController()
-//        } else {
-//            print("already logged in ")
-//        }
+        if !AWSSignInManager.sharedInstance().isLoggedIn {
+            print("presenting authui vc")
+            presentAuthUIViewController()
+        } else {
+            print("already logged in ")
+        }
         getUserProfile()
         
     }
     
-    override func viewDidLayoutSubviews() {
-        CATransaction.begin()
-        CATransaction.setDisableActions(true)
-        setupToolbar()
-        updateToolbar()
-        CATransaction.commit()
-    }
-    
+//    override func viewDidLayoutSubviews() {
+//        CATransaction.begin()
+//        //CATransaction.setDisableActions(true)
+//        setupToolbar()
+//        updateToolbar()
+//        CATransaction.commit()
+//    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         getUserProfile()
+        setupToolbar()
+        updateToolbar()
     }
     
     override func didReceiveMemoryWarning() {
