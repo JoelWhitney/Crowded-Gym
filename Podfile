@@ -6,7 +6,6 @@ target 'Crowded Gym' do
   use_frameworks!
 
   # Pods for Crowded Gym
-  pod 'SwiftyJSON', '~> 4.0'
   pod 'AWSMobileClient', '~> 2.6.6'
   pod 'AWSFacebookSignIn', '~> 2.6.6'
   pod 'AWSAuthUI', '~> 2.6.6'

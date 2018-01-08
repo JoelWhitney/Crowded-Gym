@@ -16,12 +16,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WorkoutsViewController" customModule="Crowded_Gym" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-zc-Y4O">
-                                <rect key="frame" x="0.0" y="120" width="375" height="487"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="547"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WorkoutTableCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutTableCell" rowHeight="90" id="Wk2-JW-kPG" customClass="WorkoutTableCell" customModule="Crowded_Gym" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
@@ -30,6 +35,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration" identifier="WorkoutTableCell"/>
                                     </tableViewCell>
                                 </prototypes>
@@ -38,19 +45,21 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="DI0-gi-l9C"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ysW-Df-Jvu">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                            <searchBar contentMode="redraw" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysW-Df-Jvu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <color key="barTintColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="hAf-Vf-m8g"/>
                                 </connections>
                             </searchBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-rb-ibW">
-                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-rb-ibW" customClass="WorkoutTimerToolbar" customModule="Crowded_Gym" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="543" width="375" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="don-0G-dES"/>
                                 </constraints>
                                 <items/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -63,7 +72,7 @@
                             <constraint firstItem="gA9-zc-Y4O" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vr3-TX-gg7"/>
                             <constraint firstItem="gA9-zc-Y4O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZmK-wY-wDO"/>
                             <constraint firstItem="YeS-rb-ibW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dKR-mk-mKC"/>
-                            <constraint firstItem="YeS-rb-ibW" firstAttribute="top" secondItem="gA9-zc-Y4O" secondAttribute="bottom" id="t9T-Ih-nHy"/>
+                            <constraint firstItem="YeS-rb-ibW" firstAttribute="top" secondItem="gA9-zc-Y4O" secondAttribute="bottom" constant="-60" id="t9T-Ih-nHy"/>
                             <constraint firstItem="ysW-Df-Jvu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ySJ-4G-iaq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -95,9 +104,18 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F48-Bh-71g" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uxH-nC-pIi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="uxH-nC-pIi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -106,7 +124,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ppb-Nb-yxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-950" y="32"/>
+            <point key="canvasLocation" x="-924" y="48"/>
         </scene>
         <!--Profile-->
         <scene sceneID="v88-Nk-8W9">
@@ -312,7 +330,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34u-H1-8yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1320.8" y="-865.81709145427294"/>
+            <point key="canvasLocation" x="-162" y="-725"/>
         </scene>
         <!--Add Workout-->
         <scene sceneID="1HZ-uG-yKX">
@@ -584,7 +602,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3MO-7G-J4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1278" y="18"/>
+            <point key="canvasLocation" x="1151" y="-725"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nli-a8-Jwu">
@@ -602,7 +620,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfi-WS-0Zy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="-866"/>
+            <point key="canvasLocation" x="-830" y="-725"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4jy-i5-wbU">
@@ -620,7 +638,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="429-GS-fwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="634" y="18"/>
+            <point key="canvasLocation" x="494" y="-725"/>
         </scene>
     </scenes>
     <resources>

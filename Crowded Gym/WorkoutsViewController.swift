@@ -36,8 +36,7 @@ class WorkoutsViewController: UIViewController {
         }
     }
     var timer = Timer() //make a timer variable, but do do anything yet
-    let timeBigInterval: TimeInterval = 30.0
-    let timeSmallIntervl: TimeInterval = 15.0
+    var timerActive = false
     var timeCount: TimeInterval = 0.0
     
     // MARK: - IBActions
@@ -50,12 +49,22 @@ class WorkoutsViewController: UIViewController {
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        if !AWSSignInManager.sharedInstance().isLoggedIn {
-            presentAuthUIViewController()
-        }
-        updateToolbar()
+//        if !AWSSignInManager.sharedInstance().isLoggedIn {
+//            print("presenting authui vc")
+//            //presentAuthUIViewController()
+//        } else {
+//            print("already logged in ")
+//        }
         getUserProfile()
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        setupToolbar()
+        updateToolbar()
+        CATransaction.commit()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -69,6 +78,19 @@ class WorkoutsViewController: UIViewController {
     }
     
     // MARK: - Methods
+    func setupToolbar() {
+        workoutTimerToolbar.isTranslucent = true
+        workoutTimerToolbar.setBackgroundImage(UIImage(),
+                                        forToolbarPosition: .any,
+                                        barMetrics: .default)
+        workoutTimerToolbar.setShadowImage(UIImage(), forToolbarPosition: .any)
+        var gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = workoutTimerToolbar.bounds
+        gradient.colors = [UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 0.3).cgColor, UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1.0).cgColor]
+        gradient.locations = [ 0.0, 1.0]
+        workoutTimerToolbar.layer.insertSublayer(gradient, at: 0)
+    }
+    
     func updateToolbar() {
         var toolbarItems = [UIBarButtonItem]()
         // left
@@ -84,19 +106,21 @@ class WorkoutsViewController: UIViewController {
         let seconds = Int(timeCount) % 60
         let timeCountString = String(format:"%02i:%02i", minutes, seconds)
         timerLabel.text = timeCountString
+        timerLabel.textColor = UIColor.white
         timerLabel.textAlignment = NSTextAlignment.center
         workoutTimerView.addSubview(timerLabel)
         
         let workoutLabel = UILabel(frame: CGRect(x: 0, y: 30, width: 200, height: 15))
         workoutLabel.font = UIFont.systemFont(ofSize: 14.0)
         workoutLabel.text = "No workout selected"
+        workoutLabel.textColor = UIColor.white
         workoutLabel.textAlignment = NSTextAlignment.center
         workoutTimerView.addSubview(workoutLabel)
         
         toolbarItems.append(UIBarButtonItem(customView: workoutTimerView))
         // right
         toolbarItems.append(UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil))
-        if !timer.isValid {
+        if !timerActive {
             toolbarItems.append(UIBarButtonItem(image: #imageLiteral(resourceName: "Play"), style: .plain, target: self, action: #selector(startTimer(sender:))))
         } else {
             toolbarItems.append(UIBarButtonItem(image: #imageLiteral(resourceName: "Pause"), style: .plain, target: self, action: #selector(pauseTimer(sender:))))
@@ -109,12 +133,16 @@ class WorkoutsViewController: UIViewController {
         if !timer.isValid{ //prevent more than one timer on the thread
             print("Timer Started")
             print(timeCount)
+            timerActive = true
+            updateToolbar()
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimeCount), userInfo: nil, repeats: true)
         }
     }
+    
     @objc func pauseTimer(sender: UIButton) {
         print("Timer Stopped")
         timer.invalidate()
+        timerActive = false
         updateToolbar()
     }
     
@@ -159,9 +187,10 @@ class WorkoutsViewController: UIViewController {
                 // SignIn succeeded.
             } else {
                 sleep(1)
-                let alertController = UIAlertController(title: "Error", message: "Sign in is required to store beer inventory.", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
-                self.presentedViewController?.present(alertController, animated: true, completion: nil)
+                print("Error occurred: \(String(describing: error))")
+//                let alertController = UIAlertController(title: "Error", message: "Sign in is required to store beer inventory.", preferredStyle: UIAlertControllerStyle.alert)
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+//                self.presentedViewController?.present(alertController, animated: true, completion: nil)
             }
         })
     }
